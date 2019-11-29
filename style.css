@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -147,6 +149,76 @@ body{
 
 
 
+.main-details{
+    position: relative;
+
+    
+    transform: translate(0%, 50%);
+    margin: 0 150px;
+  
+
+    font-family: 'Poppins',sans-serif;
+    border-radius: 10px;
+    opacity: 0;
+
+    display: flex;
+    flex-direction: row;
+
+
+    animation: show 0.5s ease-in forwards 4.5s;
+
+}
+
+
+
+
+/* Text on landing */
+.text-landing {
+    margin-left: 200px;
+    width: 47%;
+}
+
+.text-landing h1{
+color: white;
+font-weight: 400;
+font-size: 3.8em;
+
+margin-bottom: 30px;
+}
+
+
+.text-landing p{
+font-family: 'Open Sans', sans-serif;
+font-weight:  100;
+color:white;
+}
+
+
+
+/* hand animation */
+#hand{
+margin-right: 30px;
+  animation-name: hand;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+  }
+
+
+
+
+  /* Image on landing */
+
+.photo-landing{
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+
+    box-shadow: 4px 4px 18px -4px #343434;
+
+}
+
 @keyframes line-anim {
     to{
     stroke-dashoffset: 0;
@@ -177,5 +249,36 @@ body{
     to{
     display:none;
     opacity:0;
+    }
+}
+
+@keyframes hand{
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(-10.0deg)
+    }
+
+    20% {
+        transform: rotate(12.0deg)
+    }
+
+    30% {
+        transform: rotate(-10.0deg)
+    }
+
+    40% {
+        transform: rotate(9.0deg)
+    }
+
+    50% {
+        transform: rotate(0.0deg)
+    }
+
+    100% {
+        transform: rotate(0.0deg)
+    }
     }
 }
