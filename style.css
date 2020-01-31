@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Poppins:100,200,300,400,500,600,700,800,900&display=swap');
 
+:root {
+    --main-highlight: #C06C84;
+}
+
+
 *{
     padding: 0;
     margin: 0;
@@ -7,7 +12,10 @@
     font-family: 'Poppins',sans-serif;
 
 }
-
+a {
+    text-decoration: none;
+    color: unset    ;
+}
 
 
 body{
@@ -145,14 +153,29 @@ body{
 
 .name_animation_land{
     animation: hide 1s ease forwards 4s;
+
+        /* animation: hide 1s ease forwards 0.5s; */
+
 }
 
 nav{
+    background-color: inherit;
     display: flex;
-    flex-direction: row;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+
+    z-index: 39000;
     justify-content: space-evenly;
-    padding: 30 100;
+    padding: 30px 100px;
+
+
+
     animation: show 0.7s ease-in forwards 4s;
+
+
+        /* animation: show 0.7s ease-in forwards 0.5s; */
+
     opacity: 0;
 }
 
@@ -175,19 +198,23 @@ nav a:nth-child(n+2){
     padding-left: 20px;
 }
 .main-details{
-    transform: translate(0%, 20%);
-  
+  width: 100%;
+  height: 100%;
 
-    border-radius: 10px;
     opacity: 0;
+    padding-left: 40px;
+    padding-right: 40px;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-
+            align-items: center;
+            justify-content: space-around;
 
 
     animation: show 0.7s ease-in forwards 4s;
+
+            /* animation: show 0.7s ease-in forwards 0.5s; */
+
 
 }
 
@@ -197,9 +224,8 @@ nav a:nth-child(n+2){
     box-shadow: 0 3px 2px 0 rgba(0,0,0,0.7);
     border-radius: 3px;
     border: transparent;
-    height: 45px;
     width: 20vw;
-    padding: 0 30px;
+    padding: 20px;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -252,21 +278,27 @@ nav a:nth-child(n+2){
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-bottom: 100px;;
-
+    height: 50%;
     width: 45%;
+    padding: 30px 40px;
 }
 
 
-.text-landing h1{
+h1{
 color: white;
 font-weight: 400;
 font-size: 3.8em;
-
 }
 
+h3 {
+    font-family: 'Open Sans',
+    sans-serif;
 
-.text-landing p{
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+p{
 font-family: 'Open Sans', sans-serif;
 font-weight:  300;
 font-size: 1.1em;
@@ -296,7 +328,7 @@ margin-right: 30px;
 .photo-landing img{
     width: 450px;
     background-color: #ffffff;
-    padding: 5px;
+    padding: 1px;
     border-radius: 10px;
 
     box-shadow: 4px 4px 18px -4px #343434;
@@ -326,6 +358,261 @@ margin-right: 30px;
 cursor: pointer;
 
 }
+
+
+.second {
+    display: flex;
+    flex-direction: column;
+
+    padding: 60px;
+
+    justify-content: center;
+        align-items: center;
+
+
+    margin-bottom: 30vh;
+
+
+    color: white;
+
+}
+
+.projects-synopsis {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects-synopsis h1 {
+    margin-bottom: 10px;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 30vh 30vh 30vh;
+
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+
+    color: white;
+
+    gap: 20px;
+
+     /* animation: show 0.7s ease-in forwards 4s; */
+
+     animation: show 0.7s ease-in forwards 0.5s;
+
+
+
+}
+
+.content {
+    border-radius: 10px;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100%;
+
+
+          filter: sepia(30%);
+
+}
+
+
+#compass {
+    grid-row: 1/span 2;
+    height: 50vh;
+     background-image: url('img/compass.png');
+      background-size: 130vh;
+
+}
+
+
+
+.projects div:nth-child(2n) {
+         background-image: url('img/commit.jpeg');
+               background-size: 100vh;
+    background-position-y: -100px;
+
+
+
+}
+
+
+.projects div:nth-child(3n) {
+    grid-row: span 2;
+    background-image: url('img/vivid.jpg');
+    background-position-x: -400px;
+}
+
+.projects div:nth-child(4n){
+ background-image: url('img/matildas.jpg');
+ background-size: 40vh;
+background-position-y: 0px;
+background-position-x: -60px;
+}
+
+
+
+.title {
+    opacity: 0;
+    height: 100%;
+    transition:  0.25s ease-in;
+    border-radius: 10px;
+    background-color: rgba(192, 108, 132,0.4);
+     padding: 10px;
+    position: relative;
+
+    z-index: 99999;
+}
+
+.title:hover{
+     opacity: 1;
+    background-color: rgba(192, 108, 132,0.4);
+    cursor: pointer;
+}
+
+
+.title h3{
+    padding: 10px;
+    top:80%;
+}
+
+
+
+.project-background{
+    height:70vh;
+
+    background-image: url('./projects/project-img/commit-header.png');
+      background-position: left;
+
+    background-attachment: fixed;
+        background-repeat: no-repeat;
+
+}
+
+
+.project-header{
+        margin: 100px 180px;
+
+}
+.project-header-text{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.project-header h1:after {
+     content:' ';
+     display:block;
+     border:2px solid var(--main-highlight);
+}
+
+
+.project-intro{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+
+    margin: 100px 0px;
+
+}
+
+.project-intro p{
+    margin-left: 10%;
+}
+
+#project-border{
+        width: 100%;
+         border:2px solid var(--main-highlight);
+
+
+}
+
+
+.collapsable {
+    width: 100%;
+}
+
+.collapsable:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    float: right;
+    margin-left: 5px;
+    color: white;
+
+}
+
+
+
+.hidden-stage {
+    margin-top: 50px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    color: white;
+
+}
+
+
+.hidden-stage h3{
+    margin: 20px 0px;
+}
+.hidden-stage--breakdown{
+    display: flex;
+    margin: 40px;
+    flex-direction: row;
+}
+
+.hidden-stage--breakdown div{
+    display: flex;
+width: 33%;
+margin-right: 50px;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: justify;
+}
+
+.hidden-stage--breakdown h3{ 
+    color: var(--main-highlight);
+}
+
+
+
+
+
+footer {
+    background: white;
+    /* box-shadow: 0px -15px 5px 0px rgba(200, 0, 0, 0.75); */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+footer div {
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 60px;
+}
+
+
+footer img {
+    width: 100px;
+
+}
+
+
+
 
 @keyframes line-anim {
     to{

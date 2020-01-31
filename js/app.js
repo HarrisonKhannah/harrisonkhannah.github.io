@@ -1,6 +1,14 @@
-const logo = document.querySelectorAll('#logo path')
+const body = document.body;
 
 
-for (i = 0; i<logo.length; i++){
-    console.log(`Letter ${i} is ${logo[i].getTotalLength()}`)
+window.onload  = function () {
+    body.style.opacity = 0;
+    setInterval(showBody,50);
 }
+
+
+
+function showBody() {
+    body.style.transition = ("all 2s");
+    body.style.opacity = 1;
+}z
