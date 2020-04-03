@@ -29,7 +29,8 @@ body{
     top: 40%;
     left: 50%;
     transform: translate(-50%, 50%);
-
+    width: 1059px;
+    height: 75px;
     animation: fill 0.5s ease forwards 2.5s;
 }
 
@@ -40,7 +41,8 @@ body{
     left: 50%;
     transform: translate(-50%, 50%);
     opacity:0;
-
+    width: 721px;
+    height: 50px;
 
     animation: show 0.5s ease-in forwards 2.5s;
 
@@ -245,7 +247,7 @@ nav a:nth-child(n+2){
       box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
       transform: translate3d(0, 1px, 0);
     }
-  }
+
   
   .pulse {
     position: relative;
@@ -493,17 +495,33 @@ background-position-x: -60px;
     top:80%;
 }
 
-
+.samples{
+    margin-bottom: 30px;
+}
 
 .project-background{
     height:70vh;
 
     background-image: url('./projects/project-img/commit-header.png');
+    object-fit: fill;
+    background-attachment: fixed;
+        background-repeat: no-repeat;
+
+}
+
+.project-background-compass{
+    height:70vh;
+
+    background-image: url('./projects/project-img/background.png');
       background-position: left;
 
     background-attachment: fixed;
         background-repeat: no-repeat;
 
+}
+
+.lead{
+    margin-bottom: 20px;
 }
 
 
@@ -644,9 +662,92 @@ footer img {
     margin-right: 10px;
 }
 
+@media only screen and (max-width: 780px) {
+    .main-details{
+        flex-direction: column;
+    }
+    .text-landing{
+        width: unset;
+        padding: 0 40px;
+    }
+    .photo-landing img{
+        display: none;
+    }
+    button{
+        width: 80vw;
+    }
+    .socials{
+        flex-direction: row;
+    }
+
+    .socials a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .socials img:nth-child(n){
+        margin-top: unset;
+    }
+    #logo{
+        width: 80%;
+    }
+    #desc {
+        width: 70%;
+        top: 50%;
+    }
+}
 
 
+@media only screen and (max-width: 500px) {
+    nav{
+        padding: 20px 50px;
+        display: unset;
+    }
+    h1{
+    font-size: 2.5em;
+    }
 
+    p{
+        font-size: 1em;
+    }
+    
+    button{
+        margin-top: 21px;
+    }
+    .contact{
+       display: none;  
+    }
+    .name{
+        display: none;
+    }
+
+    .projects-synopsis {
+        width: 100%;
+    }
+    .projects{
+        display: unset;
+    }
+    .projects div:nth-child(2n){
+        height: 30vh;
+    }
+    #compass{
+        height: 30vh;
+        margin-bottom: 50px;
+    }
+
+    .project-header{
+        margin: 100px 30px;
+    }
+
+    .uis{
+        flex-wrap: wrap;
+        padding: 20px;
+        overflow: hidden;
+    }
+    .app-test{
+        width: 50%;
+    }
+}
 @keyframes line-anim {
     to{
     stroke-dashoffset: 0;
@@ -726,4 +827,5 @@ footer img {
         }
       }
       
-}
+
+
