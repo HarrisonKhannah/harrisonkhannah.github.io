@@ -17,13 +17,15 @@ a {
     color: unset    ;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 body{
-    background-color: #121212
+    background-color: #121212;
 }
 
 #logo{
-    position: absolute;
+    position: fixed;
     top: 40%;
     left: 50%;
     transform: translate(-50%, 50%);
@@ -31,8 +33,9 @@ body{
     animation: fill 0.5s ease forwards 2.5s;
 }
 
+
 #desc{
-    position: absolute;
+    position: fixed;
     top: 55%;
     left: 50%;
     transform: translate(-50%, 50%);
@@ -306,6 +309,11 @@ color:rgb(231, 231, 231);
 }
 
 
+.final h2{
+    color: white;
+
+}
+
 
 
 
@@ -374,6 +382,9 @@ cursor: pointer;
 
 
     color: white;
+    opacity: 0;
+
+     animation: show 0.7s ease-in forwards 4s;
 
 }
 
@@ -389,7 +400,7 @@ cursor: pointer;
 
 .projects{
     display: grid;
-    grid-template-columns: 30vh 30vh 30vh;
+    grid-template-columns: 30vh 30vh;
 
     justify-content: center;
     align-items: center;
@@ -400,9 +411,8 @@ cursor: pointer;
 
     gap: 20px;
 
-     /* animation: show 0.7s ease-in forwards 4s; */
+     animation: show 0.7s ease-in forwards 4s;
 
-     animation: show 0.7s ease-in forwards 0.5s;
 
 
 
@@ -426,6 +436,10 @@ cursor: pointer;
      background-image: url('img/compass.png');
       background-size: 130vh;
 
+}
+
+#comm {
+    grid-row: 1/span 2;
 }
 
 
@@ -581,34 +595,53 @@ margin-right: 50px;
     color: var(--main-highlight);
 }
 
+.uis{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
 
+.uis h2{
+    margin: 30px;
+}
 
 
 
 footer {
-    background: white;
-    /* box-shadow: 0px -15px 5px 0px rgba(200, 0, 0, 0.75); */
+    background: #2e2d2d;
+        font-family: 'Poppins',sans-serif;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+
+     animation: show 0.7s ease-in forwards 4s;
 
 }
 
-
+.button-wire{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px
+}
 footer div {
-    width: 70vw;
+    width: 30vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 60px;
+    justify-content: center;
+    padding: 20px;
 }
 
+footer p{
+    margin-top: 20px;
+    font-weight: 500;
+}
 
 footer img {
-    width: 100px;
-
+    width: 40px;
+    margin-right: 10px;
 }
 
 

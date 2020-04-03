@@ -1,131 +1,433 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../style.css">
-    </head>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+</head>
 
 
 
-    <body>
+<body>
 
 
 
 
-        <nav>
-            <div>
-                <a href="../index.html">Harrison Khannah</a>
+    <nav>
+        <div>
+            <a href="../index.html">Harrison Khannah</a>
 
-            </div>
+        </div>
 
-            <div>
-                <a href="/css/">Projects</a>
-                <a href="/js/">CV</a>
-                <a href="/jquery/">Contact</a>
-            </div>
+        <div>
+            <a href="../index.html#projects">Projects</a>
+            <a href="../harrison_khannah.pdf">CV</a>
+            <a href="#footer">Contact</a>
+        </div>
 
-        </nav>  
+    </nav>
 
-        <section class="project-background">
-        </section>
+    <section class="project-background">
+    </section>
 
 
-        <section class = "project-header">
-            <div class = "project-header-text">
+    <section class="project-header">
+        <div class="project-header-text">
             <p> <span id="tag"> Research, UX Design, UI Design </i> </span></p>
             <h1>Welcome to: Comm-It</h1>
+            <p> <span id="tag"> Undertaken by Harrison Khannah, Eden Gorton and Miguel Tamondong </i> </span></p>
+
+        </div>
+
+
+        <div class=project-intro>
+            <div>
+                <h2>The Comm-It is a mobile/smart watch application that encourages problematic gamblers to set their
+                    own barriers and deter themselves
+                    from Gambling. </h2>
             </div>
-
-
-            <div class = project-intro>
-             <div>
-                 <h2>The Comm-It device encourages problematic gamblers to set their own barriers and deter themselves
-                     from Gambling.</h2>
-             </div>
-             <div>
+            <div>
                 <p>The primary use case for the Comm-It is for problematic individuals who want assistance regulating
                     excessive spending. “Australian lose more money from gambling than any developed nation in the
                     world.” (Sebag-Montefiore, 2017) Research has shown gamblers “continue to persist, even after
-                    suffering extreme financial loss” (Jazaeri, 2012). </p>
+                    suffering extreme financial loss” (Jazaeri, 2012). By incorporating barriers that the gamblers set
+                    themselves, it encourages them to deter themselves from the activity </p>
+            </div>
+
+        </div>
+        <div id="project-border">
+        </div>
+
+
+        <button type="button" class="collapsable"> See Research and Iteartion Stages</button>
+        <section class="hidden-stage">
+            <div>
+                <h3>Research</h3>
+                <div>
+                    <p>To understand this problem space we had to understand what was the issue at hand, who we should
+                        engage with to delve deeper into this issue, and how?
+                        From this, we designed our research to uncover all the current issues at hand in this sector. We
+                        did this through delving into:
+                    </p>
+                    <section class="hidden-stage--breakdown">
+                        <div>
+                            <h3>Structural</h3>
+                            <p>In terms of structural characteristics, we found that the two most important factors for
+                                problem gamblers are
+                                'fast reel spins' and bright flashing lights and sounds as rewarding for any amount of
+                                money 'won' as the
+                                machine's own form of positive reinforcement</p>
+                        </div>
+
+                        <div>
+                            <h3>Venue</h3>
+                            <p>Following an extensive legal and policy review, we found that there was very little which
+                                could actually be
+                                altered in the physical problem location. The findings demonstrated a need for
+                                self-regulation.
+                                Self-regulation would be the basis for many of our concepts, as there are ‘negotiable
+                                areas’ within what a
+                                gambler can utilise to assist themselves with self-regulation.</p>
+                        </div>
+
+
+                        <div>
+                            <h3>Psychological</h3>
+                            <p>From interviewing several psychologists and councillors, we found that problem gambling
+                                can be mapped on a spectrum as there are 3
+                                factors which characterise
+                                an individual’s own experience with pathological gambling. These are: their experiences,
+                                addictions and
+                                treatment. Other than this, there is no uniform definition for what ‘problem gambling’
+                                entails, and
+                                currently only describes that an individual spends excess time and finance doing this
+                                activity.</p>
+                        </div>
+                    </section>
+                    <img src="project-img/commit-iteration.jpg" width="100%">
+                </div>
+
+
+                <h3>Ideation</h3>
+                <div>
+                    <p>With the criteria in mind we used forced association to diverge our ideation. We gathered the
+                        themes explored
+                        within our criteria and began rapidly ideating. We began finding correlations between different
+                        elements within our ideation, specifically in regard to commitment and spending, the involvement
+                        of families,
+                        and trying to get the user physically away from the environment itself. We used crazy eights to
+                        collaboratively build
+                        upon these areas to iterate and benefit future solutions.
+
+                    </p>
+                </div>
+
+                <h3>The chosen concept</h3>
+                <div>
+                    <p>The chosen concept that came out of the iteration stages was the Comm-it. It was a simple
+                        phone/watch application that encouragess someone who is wanting to stop gambling to set their
+                        own barriers and limitaitons on the money they spend. Moreover, most gamblers achieve the best
+                        results when their family is encouraging them through the process. This thereby lends itself to
+                        the installation of the "family mode", in which a the gambler can opt in for a family member to
+                        help and track their progress, if they so wish. </p>
+                    <div>
+                        <div>
+                            <img src="project-img/1.png" width="40%">
+                            <img src="project-img/2.png" width="40%">
+                        </div>
+                        <div>
+                            <h3> It's inherit problem and how we went about solving it</h3>
+                            <p>A precondition is that: users have to want help - or they will manipulate others to
+                                achieve their
+                                goals. Multiple use cases were explored, determining multiple alternative flows
+                                where manipulation
+                                could be invoked from the problematic individual. From the use case exploration it
+                                was clear the
+                                manipulation of the system was going to be a great concern for the outcome of the
+                                ‘Comm-it’.
+                                Likewise, uptake of the Comm-it, is likely to be relatively low due to the lack of
+                                user control and
+                                freedom.
+                            </p>
+                        </div>
                     </div>
 
                 </div>
-            <div id="project-border">
-            </div>
 
-
-            <button type = "button" class = "collapsable"> See Research and Iteartion Stages</button>
-            <section class = "hidden-stage">
+                <h3>Our Iteration Strategy</h3>
                 <div>
-<h3>Research</h3>
-<div>
-   <p>To understand this problem space we had to understand what was the issue at hand, who we should engage with to delve deeper into this issue, and how?
-       From this, we designed our research to uncover all the current issues at hand in this sector. We did this through delving into:
- </p>
- <section class = "hidden-stage--breakdown">
- <div>
-     <h3>Structural</h3>
-     <p>In terms of structural characteristics, we found that the two most important factors for problem gamblers are
-         'fast reel spins' and bright flashing lights and sounds as rewarding for any amount of money 'won' as the
-         machine's own form of positive reinforcement</p>
- </div>
-
-  <div>
-      <h3>Venue</h3>
-      <p>Following an extensive legal and policy review, we found that there was very little which could actually be
-          altered in the physical problem location. The findings demonstrated a need for self-regulation.
-          Self-regulation would be the basis for many of our concepts, as there are ‘negotiable areas’ within what a
-          gambler can utilise to assist themselves with self-regulation.</p>
-  </div>
-
-
-    <div>
-        <h3>Psychological</h3>
-        <p>From interviewing several psychologists and councillors, we found that problem gambling can be mapped on a spectrum as there are 3
-            factors which characterise
-            an individual’s own experience with pathological gambling. These are: their experiences, addictions and
-            treatment. Other than this, there is no uniform definition for what ‘problem gambling’ entails, and
-            currently only describes that an individual spends excess time and finance doing this activity.</p>
-    </div>
-    </section>
-    <img src = "project-img/commit-iteration.jpg" width = "100%">
-</div>
+                    <p><strong>Usability mix test: Think aloud/roleplay </strong>
+                        The aim of mixed usability testing was to test our conceptual model against our user’s
+                        mental model, to understand if our design principle implementation was successful and where the
+                        core errors were. We implemented role-play to understand the usability in conjunction with
+                        conceptual application and think aloud to find out why the users are having issues.
+                    </p> <br><br>
+                    <p>
+                        <strong>Think-aloud: </strong>The method allowed us to not only figure out where the errors
+                        were, by
+                        why.
+                        Throughout the iterations, think aloud’s provided key data in our problem of ‘clarity’, and
+                        allowed us to determine whether or not it was navigation clarity or the lack of conceptual
+                        information.
+                    </p><br><br>
+                    <p>
+                        <strong>Roleplaying </strong>was a method used to test the concept. As only the gambler could
+                        use the
+                        wearable,
+                        we couldn’t have one user test both devices. Therefore, one facilitator acted out what the
+                        corresponding persona would be doing.
+                    </p><br><br>
+                    <div>
 
 
-<h3>Ideation</h3>
-<div>
-    <p>With the criteria in mind we used forced association to diverge our ideation. We gathered the themes explored
-        within our criteria and began rapidly ideating. We began finding correlations between different
-        elements within our ideation, specifically in regard to commitment and spending, the involvement of families,
-        and trying to get the user physically away from the environment itself. We used crazy eights to collaboratively build
-        upon these areas to iterate and benefit future solutions. 
+                    </div>
 
-</p>
-</div>
+                </div>
+                <h3>Iteartion One</h3>
+                <div>
+                    <iframe src="https://marvelapp.com/45j76ea?emb=1&amp;iosapp=false&amp;frameless=false" width="452"
+                        height="901" allowtransparency="true" frameborder="0"></iframe>
 
+                    <iframe src="https://marvelapp.com/5acdbfg?emb=1&amp;iosapp=false&amp;frameless=true" width="395"
+                        height="556" margin-left="" allowtransparency="true" frameborder="0"></iframe>
+                </div>
+                <div>
+                    <h2>Outcomes of User Research and its implementation into iteration one</h2>
+                    <p>
+                        From the presentation of our solution’s future directions of the original concept were
+                        discussed:
+                        <br><br>
+                        <strong>How can we reduce alcohol related violence?</strong>
+                        The Comm-it was further developed to implement Alt-funs concept of relaxation – breaking the
+                        negative
+                        feedback loop through relaxation techniques of mindfulness. This was updated through a new
+                        breathing
+                        feature. It uses vibration to assist with breathing techniques. The function ‘pops-up’ if the
+                        wearable determines heart rate is too high (built in Apple Watch function), and the vibration
+                        increases suggesting breathing in, decreasing to suggest breathing out.
+                        <br><br>
+                        <strong>How can we make it more accessible for individuals who have been drinking?</strong>
+                        The Comm-it removed many of the wearable functions, reducing it to bare minimum so users can use
+                        it
+                        while under the influence of alcohol. This applies the, 80/20 rule and flexibility usability
+                        trade
+                        off.
+                        <br><br>
+
+
+
+                        <strong>How can you reduce the commitment level over time?</strong>
+                        There is a new overall limit, where users can reduce cash out limit and payment limit over time.
+                        This was an implementation suggested by our tutor.
+                        <br><br>
+                        <strong>How can you ensure users won’t break?</strong>
+                        Through providing external regulation. The Comm-it implemented multiple factors of the involve
+                        system, including increased communication with the loved one through a new messaging function,
+                        the
+                        viewing of past activity, time and date of gambling. All of which allow the family to be more
+                        involved, and provide them with more monitoring abilities that will assist the users to “not
+                        break”.
+                    </p>
+                    <img src="project-img/3.jpg" width="100%">
+
+                </div>
 
             </div>
-            
-            </section>
+            <div>
+                <h2>Iteartion Two</h2>
+                <div class="button-wire">
+                    <a href='https://harrisonkhannah924854.invisionapp.com/public/share/KXWU2KD3N'><button
+                            class=call_to_action_new>Link to Self Reg Wearable</button></a>
+                    <a href='https://harrisonkhannah924854.invisionapp.com/public/share/Y6WU2KE3E'><button
+                            class=call_to_action_new>Link to Family Wearable</button></a>
+                    <a href='https://harrisonkhannah924854.invisionapp.com/public/share/GWWU2KGAS'><button
+                            class=call_to_action_new>Link to Application</button></a>
+                </div>
+                <div>
+                    <h2>Outcomes of User Research and its implementation into iteration two</h2>
+                   <p> From the first test, explorations of the problems allowed for direct areas of the product to
+                    implement solutions. A newset of objectives were needed to be met:</p>
+                    <br><br>
+                    <p><strong>How can we decrease the anger, numbness and sadness while using this application?</strong><br>
+                    Goals were implemented, allowing the application to target the ‘anger’ through providing the users
+                    with ‘new strengths”
+                    (Bethel Funerals, 2019) Goals allow the user to retrain their learnt behaviour. Streaks will be
+                    implemented, as they
+                    provide a form of “gamification” ("What Are Streaks and Why do They Work?", 2019), allowing us to
+                    implement user
+                    feedback from round one as stated “there needs to be more fun” Streaks are “habit
+                    forming”, they provide a
+                    sense of “motivation” ("Benefits of Goal Setting", n.d.)
+
+                    If the user completes a goal, they get congratulatory messages, allowing us to counteract the
+                    “numbness” and “Sadness”
+                    with “affirmation” and “positive reinforcement” (Bethel Funerals, 2019). It provides a “pat on the
+                    back” for the users
+                    (Morin, 2019). Messages have pre suggested options, as it was a core suggestion from user feedback as, it likewise reduces
+                    the risk of users sending shocking messages to get the gambler home “I’d use it to shock the user
+                    e.g. I’m leaving you”
+                   
+                    All of which works on operant conditioning. If we apply positive reinforcement to users completing
+                    goals “it makes it
+                    more likely that the behaviour will occur again in the future” (Cherry, 2019). We provide the users
+                    with “social
+                    reinforcers” through the use of congratulatory pop up notifications (Cherry, 2019).
+
+                        <br><br>
+                    <strong>How can we assist regulation, while providing increased control?</strong><br>
+
+                    Implementing user feedback feedback and added a self regulation function. As discussed
+                    previously to supplement
+                    the lack of control, goals will be introduced to apply personal motivation. Through research we
+                    found a correlation
+                    between control and trust, “Control is good, but trust is better” (Jensen, 2014), due to the users
+                    having no control
+                    there was no trust with the families “Total control means zero trust” (Jensen, 2014). Limiting was
+                    removed, as users
+                    didn’t like how only families could do it.
+                        <br><br>
+                   <strong>How can we gain more ‘trust’ with the user?</strong><br>
+                    Implementing the user solution of ‘terms and conditions”.
+
+                        <br><br>
+                  
+                    <strong>How can we implement more educational components into the product?</strong><br>
+                    Added fun fact at the beginning of the application, as “education helps to bring
+                    productive results” (Reddy,
+                    n.d.)
+                        <br><br>
+                    
+                   <strong> How can the product provide more of a personalised experience?</strong><br>
+                    Implemented names, and personalised goals. This was important as “74% of customers feel
+                    frustrated when
+                    content isn’t personalised” (Burgess, n.d.)
+                    </p>
+                </div>
+                    <img src="project-img/4.jpg" width="100%">
+
+                            <div>
+                <h2>Iteartion Three</h2>
+                <div class="button-wire">
+          <a href='https://invis.io/8GUI7OBUSKN '><button class = call_to_action_new>Link to Self Reg Wearable</button></a>
+          <a href='https://invis.io/4WUI7NO2DTH'><button class = call_to_action_new>Link to Family Wearable</button></a>
+          <a href='https://invis.io/4UUI779FVJS'><button class = call_to_action_new>Link to Application</button></a>
+                </div>
+                <div>
+                    <h2>From the presentation of our solution’s future directions of the original concept were
+                        discussed: </h2>
+
+                      <ol>  <li>How can the criteria of stress be positively affected without removing the source of stress
+                        (goals)?</li>
+                        <li>How can education and control change?</li>
+                        <li>How can mindfulness be implemented while also minimising the ‘annoyance’ for some?</li>
+                      </ol>
+
+                    <br><br>
+                    <p><strong>The design freeze of mindfulness</strong><br>
+                        Mindfulness was a concept implemented at the start of the iteration process, but properly tested
+                        in iteration two. The usability testing users stated that in theory it would decrease anger, but
+                        the execution might increase it. Specifically, the use of vibration. Due to our mock-ups unable
+                        to implement the element of vibration, the problem cannot be reliability tested. However, other
+                        sensory mechanisms were discussed. The use of visual flashy and sound would be unviable, and the
+                        context of the gambling room would distract. Therefore, only touch and smell are left. Smell
+                        isn’t technologically feasible yet, and touch is already implemented with the vibration.
+                        Therefore, the team decided to implement a ‘design freeze’ into the mindfulness problem.
+
+
+                        <br><br>
+                    <strong>How can education and control change?</strong><br>
+
+After previous development on education and control, based on prior feedback, the criteria did not improve, and in the
+case of education; got worse. The concept of “notifying the users on their lack of control” became unnecessary, as users
+have increased control in ‘self-regulation’, therefore the criteria is subjective to the mode they pick. It is also
+important to discuss, we are testing with gamblers, individuals who state they as ‘casual’, they don’t believe they have
+a problem. This may affect their perception on the concept of control, as they don’t want to stop gambling, thus don’t
+want reduced control. In relation to education, users stated they needed more “personalised education” which was the
+concept behind the previous implementations. After discussion into the criteria of education, the team decided that
+‘identification of problematic behaviour’ was very similar to education. Therefore, the criteria of education were also
+removed.
+
+                        <br><br>
+                   <strong>How can the criteria of stress be positively affected without removing the source of stress (goals)?</strong><br>
+A large conceptual change occurred in iteration 2 after high amounts of negative reactions to the product. The
+implementation of goals, self-regulation, and positive conditioning reduced the anger and sadness. However, all of which
+has increased stress. Goals and streaks made the user stressed due to the added pressure of not wanting to ‘break them’.
+Previously the pressure came from the product, now the pressures are coming from within the user. This is both negative
+and positive. Negative as users stress will decrease desirability, but positive as users are able to more effectively
+self-regulate without the need for external control. Therefore, as a team we collective decided that a trade-off must
+occur. Which is worse domestic violence or a user feeling pressured to stick to a limit they set themselves? While we
+are still investing in the problem area of ‘emotion’, the criteria of ‘reducing stress’ has become obsolete.
+
+                        <br><br>
+                  
+                    </p>
+                </div>
+            </div>
         </section>
+        <section class = "final">
+        <h2>Final Solution</h2>
+        <div>
+            <p>The original com-it was a wearable pre-commitment card, that told the users to stop, when they used all
+                their money. Following weeks of iteration, numerous development sprints, user testing and exploration.
+                the commit has evolved. Once a product that put up barriers on excessive spending. Now: a device that
+                encourages the user to set their own barriers and deter themselves.
+                <br><br>
+                The com-its aim was never to solve the gambling problem in Australia, but to help the users problem with
+                gambling. As a team, we believe we have succeeded in our aim. The com-it encourages family
+                communication, and provides self help methods, for gamblers who want help. It gives a physical visual on
+                income lost, rather than income gained. It gives the user goals and aspirations, to assist their change
+                management process. The com-it continuously encourages the user through their time of loss.
+<br><br>
+                The development of this product has not only has ensured improved usability and user satisfaction, but
+                has made us continuously more aware of our users’ internal conflict. Allowing the com-it to develop
+                alongside the user.
+<br><br>
+                Therefore, the com-it was once just to commit to reduced spending, now it's committing to your limit,
+                your family, but more importantly – yourself.
+
+            </p>
+            <div class = uis>
+            <div>
+            <h2> Family Interaction Wearable </h2>
+            <iframe style="border: none;" width="200" height="300"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F6SiWNdYQtROXEtFMnErKE7%2FFinal_HiFi%3Fnode-id%3D0%253A13421%26scaling%3Dmin-zoom"
+                allowfullscreen></iframe>
+</div>
+ <div>
+            <h2> Self Regulation Wearable </h2>
+            <iframe style="border: none;" width="200" height="300"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F6SiWNdYQtROXEtFMnErKE7%2FFinal_HiFi%3Fnode-id%3D0%253A12138%26scaling%3Dmin-zoom"
+                allowfullscreen></iframe>
+</div>
+ <div>
+            <h2> Application </h2>
+            <iframe style="border: none;" width="400" height="900"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F6SiWNdYQtROXEtFMnErKE7%2FFinal_HiFi%3Fnode-id%3D0%253A2%26scaling%3Dmin-zoom"
+                allowfullscreen></iframe>
+</div>
+</div>
+        </section>
+    </section>
 
 
-                    <footer>
-                        <h3> Contact </h3>
+    <footer>
 
-                        <div>
+        <footer id = "footer">
+            <p> Contact </p>
+            <div>
 
-                            <img src="../img/linked.svg">
-                            <img src="../img/git.svg">
-                            <img src="../img/email.svg">
-                        </div>
-                    </footer>
+                <a href="https://www.linkedin.com/in/harrison-khannah-023113188/"><img src="../img/linked.svg"> </a>
+                <a href="https://github.com/HarrisonKhannah"><img src="../img/git.svg"></a>
+                <a href="mailto:harrisonkhannah@gmail.com"><img src=" ../img/email.svg"> </a>
+            </div>
+        </footer>
 
-        
-        <script src="../js/collapsable.js"></script>
 
-    </body>
+    <script src="../js/collapsable.js"></script>
+
+</body>
+
 </html>
